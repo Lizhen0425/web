@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBA大專籃球聯賽</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="news.css">
+</head>
+ 
+    <body>
+        <div class="top"></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="./home.html"><img class="navbar-brand" src="./homepicture/logo-1.png"></a>
+            <!-- RWD button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 導覽列上的超連結 links on nav -->
+            <div class="collapse navbar-collapse" id="navDropdown2">
+                <ul class="navbar-nav">
+                    <!--賽程-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="./game schedule.html">賽程表</a>
+                    </li>
+                    <!--戰績-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./standings.html">戰績</a>
+                    </li>
+                    <!--最新消息-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " data-bs-toggle="dropdown" href="./news.html">最新消息</a>
+    
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./news.html">新聞/公告</a></li>
+                            <li><a class="dropdown-item" href="./video.html">近期賽事影片</a></li>
+                        </ul>
+                    </li>
+                    <!--數據-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " data-bs-toggle="dropdown" href="./rank.html">數據</a>
+    
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./rank.html#a1">個人數據排行</a></li>
+                            <li><a class="dropdown-item" href="./rank.html#a2">團隊數據排行</a></li>
+                        </ul>
+                    </li>
+                    <!--球隊資訊-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./teaminform.html">球隊資訊</a>
+                    </li>
+                    <!--留言板-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./message.html">留言板</a>
+                    </li>
+                    <!--成員介紹-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="member.html">組員介紹</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="https://www.instagram.com/uba.tw/"><img class="navbar-link" src="./homepicture/instagram.png"></a>
+            <a href="https://www.facebook.com/CTUSFSSU"><img class="navbar-link" src="./homepicture/facebook.png"></a>
+            <a href="https://www.youtube.com/@ssutv"><img class="navbar-link-last" src="./homepicture/youtube.png"></a>
+        </nav>
+       
+        <div class="main">
+            <div class="title">
+                <span></span>
+                <h1>                新聞公告
+                NEWS</h1>
+
+                <!-- <h1 class="page_title">
+                </h1> -->
+            </div>
+                <div class="content">
+                    <div class="cards">
+                      <div class="card">
+                        <a class="card_link" href="http://www.ssu.org.tw/News/Detail/b9e85320-3034-4243-9263-f04fa5a48628">
+                            <img class="card_pic" src="./newspicture/news1.jpeg" alt="新聞圖片"></a>
+                        <p class="card_date">2023-05-21</p>
+                        <h2 class="card_title">用籃球寫出自己的故事 黃韋凱將遺憾化為助力勇敢追夢</h2>
+                        <h3 class="card_content">我覺得臺灣大學是學生籃球的最高殿堂！」秉持這個想法，去年順利考上國立臺灣大學生化科學研究所的黃韋凱將自己推向嚮往的舞台，
+                            同時也將與學長許致銓再度一起打球設為目標。經過一連串的準備、入選臺大籃球隊，儘管過程看似相當順遂，但自認實力欠缺的他始終抱持著謙虛的態度，將這一切歸功於...</h3>
+                      </div>
+                      <div class="card">
+                        <a class="card_link" href="https://www.ssu.org.tw/News/Detail/42b3121b-b1fe-4dc1-95a9-53353f581328?Type=c99e6d1d-4e4e-4f91-a292-dd5db3b9150e">
+                            <img class="card_pic" src="./newspicture/news2.jpeg" alt="新聞圖片"></a>
+                        <p class="card_date">2023-03-29</p>
+                        <h2 class="card_title">公開一決賽成就精彩賽事 球迷力量必不可少</h2>
+                        <h3 class="card_content">111學年度富邦人壽UBA大專籃球聯賽在3月26日圓滿落幕。今年是UBA在小巨蛋舉行的第六個賽季，除去108學年受疫情影響採閉門比賽外，
+                            每年決賽兩日皆吸引萬名球迷進場支持，也因為有球迷的一路力挺，以實際行動支持賽事與球隊，才能成就一年又一年的精彩賽季。本季的UBA決賽，除了場上打得激...</h3>
+                      </div>
+                     
+                      <div class="card">
+                        <a class="card_link" href="https://www.ssu.org.tw/News/Detail/0a6b287e-674d-4c32-8fc2-ddcc1116af22?Type=c99e6d1d-4e4e-4f91-a292-dd5db3b9150e">
+                            <img class="card_pic" src="./newspicture/news3.jpeg" alt="新聞圖片"></a>
+                        <p class="card_date">2023-03-29</p>
+                        <h2 class="card_title">隊長游艾喆MVP五冠入袋政大3連霸 送1分鐘傷退的林彥廷</h2>
+                        <h3 class="card_content">大三主控游艾喆本季新高21分8籃板3助攻領軍，尤其填補大四後衛林彥廷開賽第1分鐘就扭傷腿、退場不克再戰的得分空缺，
+                            衛冕軍政大得以在第四節拉出21：13強勢尾盤，突破前三節50：48小幅領先的僵局，
+                            26日71：61力克決賽頭號種子健行科大，連續3季在臺北小巨蛋決賽2連勝，拿下111學年度富邦人...</h3>
+                      </div>
+                     
+                      <div class="card">
+                        <a class="card_link" href="https://www.ssu.org.tw/News/Detail/b15a9a26-2a39-456e-b3cd-9b4f2f62658e?Type=c99e6d1d-4e4e-4f91-a292-dd5db3b9150e">
+                            <img class="card_pic" src="./newspicture/news4.jpeg" alt="新聞圖片"></a>
+                        <p class="card_date">2023-03-29</p>
+                        <h2 class="card_title">跨3、4節17：0世新逆襲拿第三 土洋4人及臺師3人將選秀、林信寬未定</h2>
+                        <h3 class="card_content">靠跨三、四節的17：0攻勢，上兩季第二世新大學26日克服大一菜鳥球星陳將双第三節最後2分鐘傷了右腳踝退場的困難，67：64後來居上力克臺師大，
+                            拿下在臺北小巨蛋舉行的111學年度富邦人壽UBA大專籃球聯賽男一級季軍，無緣連3季爭冠，第三作收也OK。
+                            睽違2季重返四強的臺師，上半場靠大三「一哥...</h3>
+                      </div>
+                      <div class="card">
+                        <a class="card_link" href="https://www.ssu.org.tw/News/Detail/ff2e7a04-cd6d-4566-8e97-6d56bf4387e7?Type=c99e6d1d-4e4e-4f91-a292-dd5db3b9150e">
+                            <img class="card_pic" src="./newspicture/news5.jpeg" alt="新聞圖片"></a>
+                        <p class="card_date">2023-03-28</p>
+                        <h2 class="card_title">男一級決賽 小巨蛋之旅新體驗 男籃菜鳥經驗吸收多</h2>
+                        <h3 class="card_content">111學年度富邦人壽UBA大專籃球聯賽公開一級決賽今於小巨蛋展開兩天的賽程，各球隊為了補強隊伍戰力，每年隊隊皆有新血加入，部分有過
+                            「攻蛋」攻蛋經驗的大一菜鳥，也因UBA回到小巨蛋的舞台上。國立臺灣師範大學本季將六位大一生帶進UBA名單，包含來自能仁家商的陳致翰，他希望經歷過首次UBA...</h3>
+                      </div>
+                      
+                
+    
+                    </div>
+                </div>
+            </div>
+        <div class="footer"></div>
+         </body>
+            
