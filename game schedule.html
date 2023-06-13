@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBA大專籃球聯賽</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="game.schedule.css">
+</head>
+<body>
+    <div class="top"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="./home.html"><img class="navbar-brand" src="./homepicture/logo-1.png"></a>
+        <!-- RWD button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 導覽列上的超連結 links on nav -->
+        <div class="collapse navbar-collapse" id="navDropdown2">
+            <ul class="navbar-nav">
+                <!--賽程-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="./game schedule.html">賽程表</a>
+                </li>
+                <!--戰績-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./standings.html">戰績</a>
+                </li>
+                <!--最新消息-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link " data-bs-toggle="dropdown" href="./news.html">最新消息</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./news.html">新聞/公告</a></li>
+                        <li><a class="dropdown-item" href="./video.html">近期賽事影片</a></li>
+                    </ul>
+                </li>
+                <!--數據-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link " data-bs-toggle="dropdown" href="./rank.html">數據</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./rank.html">個人數據排行</a></li>
+                        <li><a class="dropdown-item" href="#">團隊數據排行</a></li>
+                    </ul>
+                </li>
+                <!--球隊資訊-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./teaminform.html">球隊資訊</a>
+                </li>
+                <!--留言板-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./message.html">留言板</a>
+                </li>
+                <!--成員介紹-->
+                <li class="nav-item">
+                    <a class="nav-link" href="member.html">組員介紹</a>
+                </li>
+            </ul>
+        </div>
+        <a href="https://www.instagram.com/uba.tw/"><img class="navbar-link" src="./homepicture/instagram.png"></a>
+        <a href="https://www.facebook.com/CTUSFSSU"><img class="navbar-link" src="./homepicture/facebook.png"></a>
+        <a href="https://www.youtube.com/@ssutv"><img class="navbar-link-last" src="./homepicture/youtube.png"></a>
+    </nav>
+    <div class="main">
+        <div class="title">
+            <span></span>
+            <h1>賽程表
+            SCHEDULE</h1>
+            
+        </div>
+        <p>
+           <div class="subGroup">
+            <div class="subItem ">
+                <input type="text" name="datalist" list="yearList" id="yearInput" onchange="showData()" placeholder="年份">
+                <datalist id="yearList">
+                    <option value="2022"></option>
+                    <option value="2023"></option>
+                </datalist>
+        </div>
+            <hr>    
+               <div class="subItem ">
+                    <input type="text" name="datalist" list="monthList" id="monthInput" onchange="showData()" placeholder="月份">
+                    <datalist id="monthList">
+                        <option value="November"></option>
+                        <option value="December"></option>
+                        <option value="January"></option>
+                        <option value="Febuary"></option>
+                        <option value="March"></option>
+                    </datalist>
+               </div>
+            </hr>    
+           </div>
+        </p>
+        <div class="wrap" id="November2022">
+                <table border="1">          
+                    <tr>
+                       <th>星期一</th>
+                       <th>星期二</th>
+                       <th>星期三</th>
+                       <th>星期四</th>
+                       <th>星期五</th>
+                       <th>星期六</th>
+                       <th>星期日</th>
+                    </tr>
+                    <tr>
+                       <td></td>
+                       <td>1</td>
+                       <td>2</td>
+                       <td>3</td>
+                       <td>4</td>
+                       <td>5</td>
+                       <td>6</td>
+                    </tr>
+                    <tr>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                    </tr>
+                    <tr>
+                       <td>7</td>
+                       <td>8</td>
+                       <td>9</td>
+                       <td>10</td>
+                       <td>11</td>
+                       <td>12</td>
+                       <td>13</td>
+                    </tr>
+                    <tr>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                    </tr>
+                    <tr>
+                       <td>14</td>
+                       <td>15</td>
+                       <td>16</td>
+                       <td>17</td>
+                       <td>18</td>
+                       <td>19</td>
+                       <td>20</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                       <td>21</td>
+                       <td>22</td>
+                       <td>23</td>
+                       <td>24</td>
+                       <td>25</td>
+                       <td>26</td>
+                       <td>27</td>
+                    </tr>
+                    <tr>
+                       <td></td>
+                       <td></td>
+                       <td>地點：輔仁大學
+                        <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/中興大學.png" width="30px">14:00</p>
+                        <p><img src="./game schedule/萬能科大.png" width="30px">vs.<img src="./game schedule/德霖科大.png" width="30px">16:00</p>
+                        <p><img src="./game schedule/僑光科大.png" width="30px">vs.<img src="./game schedule/台灣師大.png" width="30px">18:00</p>
+                        <p><img src="./game schedule/國立體大.png" width="30px">vs.<img src="./game schedule/輔仁大學.png" width="30px">20:00</p>
+                       </td>
+                       <td>地點：輔仁大學
+                        <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/德霖科大.png" width="30px">14:00</p>
+                        <p><img src="./game schedule/中興大學.png" width="30px">vs.<img src="./game schedule/國立體大.png" width="30px">16:00</p>
+                        <p><img src="./game schedule/僑光科大.png" width="30px">vs.<img src="./game schedule/萬能科大.png" width="30px">18:00</p>
+                        <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/輔仁大學.png" width="30px">20:00</p>
+                       </td>
+                       <td>地點：輔仁大學
+                        <p><img src="./game schedule/國立體大.png" width="30px">vs.<img src="./game schedule/德霖科大.png" width="30px">14:00</p>
+                        <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/僑光科大.png" width="30px">16:00</p>
+                        <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/中興大學.png" width="30px">18:00</p>
+                        <p><img src="./game schedule/萬能科大.png" width="30px">vs.<img src="./game schedule/輔仁大學.png" width="30px">20:00</p>
+                       </td>
+                       <td></td>
+                       <td>地點：輔仁大學
+                        <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/德霖科大.png" width="30px">14:00</p>
+                        <p><img src="./game schedule/中興大學.png" width="30px">vs.<img src="./game schedule/萬能科大.png" width="30px">16:00</p>
+                        <p><img src="./game schedule/僑光科大.png" width="30px">vs.<img src="./game schedule/國立體大.png" width="30px">18:00</p>
+                        <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/輔仁大學.png" width="30px">20:00</p>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>地點：輔仁大學
+                            <p><img src="./game schedule/僑光科大.png" width="30px">vs.<img src="./game schedule/中興大學.png" width="30px">14:00</p>
+                            <p><img src="./game schedule/萬能科大.png" width="30px">vs.<img src="./game schedule/國立體大.png" width="30px">16:00</p>
+                            <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/政治大學.png" width="30px">18:00</p>
+                            <p><img src="./game schedule/德霖科大.png" width="30px">vs.<img src="./game schedule/輔仁大學.png" width="30px">20:00</p>
+                        </td>
+                        <td>地點：輔仁大學
+                            <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/萬能科大.png" width="30px">14:00</p>
+                            <p><img src="./game schedule/僑光科大.png" width="30px">vs.<img src="./game schedule/德霖科大.png" width="30px">16:00</p>
+                            <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/國立體大.png" width="30px">18:00</p>
+                            <p><img src="./game schedule/中興大學.png" width="30px">vs.<img src="./game schedule/輔仁大學.png" width="30px">20:00</p>
+                        </td>
+                        <td>地點：輔仁大學
+                            <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/國立體大.png" width="30px">14:00</p>
+                            <p><img src="./game schedule/中興大學.png" width="30px">vs.<img src="./game schedule/德霖科大.png" width="30px">16:00</p>
+                            <p><img src="./game schedule/萬能科大.png" width="30px">vs.<img src="./game schedule/政治大學.png" width="30px">18:00</p>
+                            <p><img src="./game schedule/僑光科大.png" width="30px">vs.<img src="./game schedule/輔仁大學.png" width="30px">20:00</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        <div class="wrap" id="December2022">
+            <table border="1">          
+                <tr>
+                   <th>星期一</th>
+                   <th>星期二</th>
+                   <th>星期三</th>
+                   <th>星期四</th>
+                   <th>星期五</th>
+                   <th>星期六</th>
+                   <th>星期日</th>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td>1</td>
+                   <td>2</td>
+                   <td>3</td>
+                   <td>4</td>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td>地點：義守大學
+                    <p><img src="./game schedule/世新大學.png" width="30px">vs.<img src="./game schedule/台灣體大.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/北市大學.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/台灣藝大.png" width="30px">vs.<img src="./game schedule/高雄師大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/文化大學.png" width="30px">vs.<img src="./game schedule/義守大學.png" width="30px">20:00</p>
+                   </td>
+                   <td>地點：義守大學
+                    <p><img src="./game schedule/世新大學.png" width="30px">vs.<img src="./game schedule/北市大學.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/台灣體大.png" width="30px">vs.<img src="./game schedule/台灣藝大.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/文化大學.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/高雄師大.png" width="30px">vs.<img src="./game schedule/義守大學.png" width="30px">20:00</p>
+                   </td>
+                   <td>地點：義守大學
+                    <p><img src="./game schedule/世新大學.png" width="30px">vs.<img src="./game schedule/文化大學.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/北市大學.png" width="30px">vs.<img src="./game schedule/台灣藝大.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/健行科大.png" width="30px">vs.<img src="./game schedule/高雄師大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/台灣體大.png" width="30px">vs.<img src="./game schedule/義守大學.png" width="30px">20:00</p>
+                   </td>
+                </tr>
+                <tr>
+                   <td>5</td>
+                   <td>6</td>
+                   <td>7</td>
+                   <td>8</td>
+                   <td>9</td>
+                   <td>10</td>
+                   <td>11</td>
+                </tr>
+                <tr>
+                   <td>地點：義守大學
+                    <p><img src="./game schedule/世新大學.png" width="30px">vs.<img src="./game schedule/高雄師大.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/台灣體大.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/台灣藝大.png" width="30px">vs.<img src="./game schedule/文化大學.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/北市大學.png" width="30px">vs.<img src="./game schedule/義守大學.png" width="30px">20:00</p>
+                   </td>
+                   <td>地點：義守大學
+                    <p><img src="./game schedule/世新大學.png" width="30px">vs.<img src="./game schedule/義守大學.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/文化大學.png" width="30px">vs.<img src="./game schedule/台灣體大.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/台灣藝大.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/高雄師大.png" width="30px">vs.<img src="./game schedule/北市大學.png" width="30px">20:00</p>
+                   </td>
+                   <td>地點：義守大學
+                    <p><img src="./game schedule/世新大學.png" width="30px">vs.<img src="./game schedule/台灣藝大.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/北市大學.png" width="30px">vs.<img src="./game schedule/文化大學.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/台灣體大.png" width="30px">vs.<img src="./game schedule/高雄師大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/健行科大.png" width="30px">vs.<img src="./game schedule/義守大學.png" width="30px">20:00</p>
+                   </td>
+                   <td>地點：義守大學
+                    <p><img src="./game schedule/世新大學.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/北市大學.png" width="30px">vs.<img src="./game schedule/台灣體大.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/文化大學.png" width="30px">vs.<img src="./game schedule/高雄師大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/台灣藝大 .png" width="30px">vs.<img src="./game schedule/義守大學.png" width="30px">20:00</p>
+                   </td>
+                   <td></td>
+                   <td></td>
+                </tr>
+                <tr>
+                   <td>12</td>
+                   <td>13</td>
+                   <td>14</td>
+                   <td>15</td>
+                   <td>16</td>
+                   <td>17</td>
+                   <td>18</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                   <td>19</td>
+                   <td>20</td>
+                   <td>21</td>
+                   <td>22</td>
+                   <td>23</td>
+                   <td>24</td>
+                   <td>25</td>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="wrap" id="January2023">
+            <table border="1">          
+                <tr>
+                   <th>星期一</th>
+                   <th>星期二</th>
+                   <th>星期三</th>
+                   <th>星期四</th>
+                   <th>星期五</th>
+                   <th>星期六</th>
+                   <th>星期日</th>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td>1</td>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                </tr>
+                <tr>
+                   <td>2</td>
+                   <td>3</td>
+                   <td>4</td>
+                   <td>5</td>
+                   <td>6</td>
+                   <td>7</td>
+                   <td>8</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                   <td>9</td>
+                   <td>10</td>
+                   <td>11</td>
+                   <td>12</td>
+                   <td>13</td>
+                   <td>14</td>
+                   <td>15</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                   <td>16</td>
+                   <td>17</td>
+                   <td>18</td>
+                   <td>19</td>
+                   <td>20</td>
+                   <td>21</td>
+                   <td>22</td>
+                </tr>
+                <tr>
+                   <td>地點：台灣藝大
+                    <p><img src="./game schedule/德霖科大.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/文化大學.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/國立體大.png" width="30px">vs.<img src="./game schedule/高雄師大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/輔仁大學.png" width="30px">vs.<img src="./game schedule/台灣藝大.png" width="30px">20:00</p>
+                    <p>地點：政治大學</p>
+                    <p><img src="./game schedule/萬能科大.png" width="30px">vs.<img src="./game schedule/北市大學.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/僑光科大.png" width="30px">vs.<img src="./game schedule/義守大學.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/中興大學.png" width="30px">vs.<img src="./game schedule/世新大學.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/台灣體大.png" width="30px">20:00</p>
+                   </td>
+                   <td>地點：台灣藝大
+                    <p><img src="./game schedule/文化大學.png" width="30px">vs.<img src="./game schedule/國立體大.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/高學師大.png" width="30px">vs.<img src="./game schedule/台灣師大.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/義守大學.png" width="30px">vs.<img src="./game schedule/輔仁大學.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/僑光科大.png" width="30px">vs.<img src="./game schedule/台灣藝大.png" width="30px">20:00</p>
+                    <p>地點：政治大學</p>
+                    <p><img src="./game schedule/德霖科大.png" width="30px">vs.<img src="./game schedule/世新大學.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/萬能科大.png" width="30px">vs.<img src="./game schedule/台灣體大.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/中興大學.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/北市大學.png" width="30px">20:00</p>
+                   </td>
+                   <td>地點：政治大學
+                    <p><img src="./game schedule/萬能科大.png" width="30px">vs.<img src="./game schedule/高雄師大.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/僑光科大.png" width="30px">vs.<img src="./game schedule/世新大學.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/輔仁大學.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/文化大學.png" width="30px">20:00</p>
+                    <p>地點：台灣藝大</p>
+                    <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/台灣體大.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/義守大學.png" width="30px">vs.<img src="./game schedule/中興大學.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/北市大學.png" width="30px">vs.<img src="./game schedule/國立體大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/德霖科大.png" width="30px">vs.<img src="./game schedule/台灣藝大.png" width="30px">20:00</p>
+                   </td>
+                   <td>
+                    <td>地點：政治大學
+                    <p><img src="./game schedule/僑光科大.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/萬能科大.png" width="30px">vs.<img src="./game schedule/文化大學.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/輔仁大學.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/高雄師大.png" width="30px">20:00</p>
+                    <p>地點：台灣藝大</p>
+                    <p><img src="./game schedule/北市大學.png" width="30px">vs.<img src="./game schedule/台灣師大.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/義守大學.png" width="30px">vs.<img src="./game schedule/德霖科大.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/台灣體大.png" width="30px">vs.<img src="./game schedule/國立體大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/中興大學.png" width="30px">vs.<img src="./game schedule/台灣藝大.png" width="30px">20:00</p>
+                   </td>
+                   <td></td>
+                   <td></td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="wrap" id="Febuary2023">
+            <table border="1">          
+                <tr>
+                   <th>星期一</th>
+                   <th>星期二</th>
+                   <th>星期三</th>
+                   <th>星期四</th>
+                   <th>星期五</th>
+                   <th>星期六</th>
+                   <th>星期日</th>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td></td>
+                   <td>1</td>
+                   <td>2</td>
+                   <td>3</td>
+                   <td>4</td>
+                   <td>5</td>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                </tr>
+                <tr>
+                   <td>6</td>
+                   <td>7</td>
+                   <td>8</td>
+                   <td>9</td>
+                   <td>10</td>
+                   <td>11</td>
+                   <td>12</td>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td>地點：文化大學
+                    <p><img src="./game schedule/萬能科大.png" width="30px">vs.<img src="./game schedule/義守大學.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/國立體大.png" width="30px">vs.<img src="./game schedule/世新大學.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/台灣藝大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/文化大學.png" width="30px">vs.<img src="./game schedule/德霖科大.png" width="30px">20:00</p>
+                    <p>地點：健行科大</p>
+                    <p><img src="./game schedule/北市大學.png" width="30px">vs.<img src="./game schedule/僑光科大.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/高雄師大.png" width="30px">vs.<img src="./game schedule/中興大學.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/台灣體大.png" width="30px">vs.<img src="./game schedule/輔仁大學.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">20:00</p>
+                   </td>
+                   <td>地點：文化大學
+                    <p><img src="./game schedule/僑光科大.png" width="30px">vs.<img src="./game schedule/高雄大學.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/北市大學.png" width="30px">vs.<img src="./game schedule/中興大學.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/台灣體大.png" width="30px">vs.<img src="./game schedule/德霖科大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/文化大學.png" width="30px">vs.<img src="./game schedule/輔仁大學.png" width="30px">20:00</p>
+                    <p>地點：健行科大</p>
+                    <p><img src="./game schedule/世新大學.png" width="30px">vs.<img src="./game schedule/萬能科大.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/國立體大.png" width="30px">vs.<img src="./game schedule/義守大學.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/台灣藝大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">20:00</p>
+                   </td>
+                   <td>地點：文化大學
+                    <p><img src="./game schedule/台灣體大.png" width="30px">vs.<img src="./game schedule/中興大學.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/台灣藝大.png" width="30px">vs.<img src="./game schedule/國立體大.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/北市大學.png" width="30px">vs.<img src="./game schedule/德霖科大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/文化大學.png" width="30px">vs.<img src="./game schedule/僑光科大.png" width="30px">20:00</p>
+                    <p>地點：健行科大</p>
+                    <p><img src="./game schedule/義守大學.png" width="30px">vs.<img src="./game schedule/台灣師大.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/高雄師大.png" width="30px">vs.<img src="./game schedule/輔仁大學.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/世新大學.png" width="30px">vs.<img src="./game schedule/政治大學.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/萬能科大.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">20:00</p>
+                   </td>
+                   <td></td>
+                </tr>
+                <tr>
+                   <td>13</td>
+                   <td>14</td>
+                   <td>15</td>
+                   <td>16</td>
+                   <td>17</td>
+                   <td>18</td>
+                   <td>19</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                   <td>20</td>
+                   <td>21</td>
+                   <td>22</td>
+                   <td>23</td>
+                   <td>24</td>
+                   <td>25</td>
+                   <td>26</td>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td>地點：台北體育館4F
+                    <p><img src="./game schedule/國立體大.png" width="30px">vs.<img src="./game schedule/政治大學.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/世新大學.png" width="30px">vs.<img src="./game schedule/文化大學.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/輔仁大學.png" width="30px">vs.<img src="./game schedule/台灣師大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/健行科大.png" width="30px">vs.<img src="./game schedule/台灣藝大.png" width="30px">20:00</p>
+                   </td>
+                   <td>地點：台北體育館4F
+                    <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/世新大學.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/文化大學.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/國立體大.png" width="30px">vs.<img src="./game schedule/台灣藝大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/健行科大.png" width="30px">vs.<img src="./game schedule/輔仁大學.png" width="30px">20:00</p>
+                   </td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>地點：台北體育館4F
+                        <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/文化大學.png" width="30px">14:00</p>
+                        <p><img src="./game schedule/輔仁大學.png" width="30px">vs.<img src="./game schedule/國立體大.png" width="30px">16:00</p>
+                        <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/台灣藝大.png" width="30px">18:00</p>
+                        <p><img src="./game schedule/健行科大.png" width="30px">vs.<img src="./game schedule/世新大學.png" width="30px">20:00</p>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="wrap" id="March2023">
+            <table border="1">          
+                <tr>
+                   <th>星期一</th>
+                   <th>星期二</th>
+                   <th>星期三</th>
+                   <th>星期四</th>
+                   <th>星期五</th>
+                   <th>星期六</th>
+                   <th>星期日</th>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td></td>
+                   <td>1</td>
+                   <td>2</td>
+                   <td>3</td>
+                   <td>4</td>
+                   <td>5</td>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td></td>
+                   <td>地點：台北體育館4F
+                    <p><img src="./game schedule/台灣藝大.png" width="30px">vs.<img src="./game schedule/輔仁大學.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/台灣師大.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/健行科大.png" width="30px">vs.<img src="./game schedule/文化大學.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/國立體大.png" width="30px">vs.<img src="./game schedule/世新大學.png" width="30px">20:00</p>
+                   </td>
+                   <td>地點：台北體育館4F
+                    <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/文化大學.png" width="30px">vs.<img src="./game schedule/國立體大.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/世新大學.png" width="30px">vs.<img src="./game schedule/台灣藝大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/輔仁大學.png" width="30px">20:00</p>
+                   </td>
+                   <td>地點：台北體育館4F
+                    <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/文化大學.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/輔仁大學.png" width="30px">vs.<img src="./game schedule/國立體大.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/台灣藝大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/健行科大.png" width="30px">vs.<img src="./game schedule/世新大學.png" width="30px">20:00</p>
+                   </td>
+                   <td>地點：台北體育館4F
+                    <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/台灣藝大.png" width="30px">14:00</p>
+                    <p><img src="./game schedule/輔仁大學.png" width="30px">vs.<img src="./game schedule/文化大學.png" width="30px">16:00</p>
+                    <p><img src="./game schedule/健行科大.png" width="30px">vs.<img src="./game schedule/國立體大.png" width="30px">18:00</p>
+                    <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/世新大學.png" width="30px">20:00</p>
+                   </td>
+                   <td></td>
+                </tr>
+                <tr>
+                   <td>6</td>
+                   <td>7</td>
+                   <td>8</td>
+                   <td>9</td>
+                   <td>10</td>
+                   <td>11</td>
+                   <td>12</td>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                </tr>
+                <tr>
+                   <td>13</td>
+                   <td>14</td>
+                   <td>15</td>
+                   <td>16</td>
+                   <td>17</td>
+                   <td>18</td>
+                   <td>19</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                   <td>20</td>
+                   <td>21</td>
+                   <td>22</td>
+                   <td>23</td>
+                   <td>24</td>
+                   <td>25</td>
+                   <td>26</td>
+                </tr>
+                <tr>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td>地點：台北小巨蛋
+                    <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">14:30</p>
+                    <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/世新大學.png" width="30px">19:30</p>
+                   </td>
+                   <td>地點：台北小巨蛋
+                    <p><img src="./game schedule/台灣師大.png" width="30px">vs.<img src="./game schedule/世新大學.png" width="30px">14:30</p>
+                    <p><img src="./game schedule/政治大學.png" width="30px">vs.<img src="./game schedule/健行科大.png" width="30px">19:30</p>
+                   </td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+<script>
+ function showData() {
+    var year = document.getElementById("yearInput").value;
+    var month = document.getElementById("monthInput").value;
+
+    // 根据选中的年份和月份显示相应的数据
+    var dataId = month + year;
+    var dataDiv = document.getElementById(dataId);
+    if (dataDiv) {
+        // 隐藏所有数据
+        var dataElements = document.getElementsByClassName("wrap");
+        for (var i = 0; i < dataElements.length; i++) {
+            dataElements[i].style.display = "none";
+        }
+        
+        // 显示选中的数据
+        dataDiv.style.display = "block";
+    } else {
+    }
+}
+</script>
+</html>
