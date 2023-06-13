@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top{
+    background-color: #057c7c;
+    width: 100%;
+    height: 4vh;
+}
+.footer{
+    background-color: #057c7c;
+    width: 100%;
+    height: 10vh;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.navbar-brand{
+    height: 10vh;
+    padding-left: 1vw;
+}
+.navbar-nav li:hover>ul.dropdown-menu {
+    display: block;
+}
+.dropdown-menu>li>a:hover:after {
+    transform: rotate(-90deg);
+    transition: 1s;
+}
+.navbar-link{
+    height: 4vh;
+    width: auto;
+    position: relative;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+.navbar-link-last{
+    height: 4vh;
+    width: auto;
+    position: relative;
+    padding-left: 0.5vw;
+    padding-right: 1vw;
+}
+a {
+    text-decoration:none;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250vh;
+    background-color: rgb(245, 245, 245);
+    align-items: center;
+}
+.title{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    height: 7vh;
+    font-size: 20px;
+    color: gray;
+    top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1;
+    text-decoration: none;
+}
+.title span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #057c7c;
+    animation-name: bar;
+    animation-duration: 0.7s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-delay: 0.3s;
+}
+
+@keyframes bar {
+    from
+    {
+        width: 0%;
+    }
+    to
+    {
+        width: 100%;
+    }
+    
+}
+
+.chooseteam
+{
+    display: flex;
+    flex-direction: row;
+    /* height: 40px; */
+    width: 92%;
+    margin-top: 35px;
+    justify-content:flex-end;
+    /* background-color: aqua; */
+}
+
+#臺灣體大,#臺灣師大,#義守大學,#國立體大,#高雄師大,#北市大學,#文化大學,#輔仁大學,#臺灣藝大,#僑光科大,#萬能科大,#健行科大,#政治大學,#世新大學,#中興大學{
+    display: none;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+
+.coachandplayer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 23%;
+    /* background-color: brown; */
+}
+.coachandplayer2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 77%;
+    /* background-color: rgb(169, 93, 93); */
+}
+.coachcontainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:start;
+    flex-wrap: wrap;
+    padding: 30px;
+    /* background-color: red; */
+}
+.coachimgBx{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    height: 95%;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    animation-name: coach;
+    animation-duration: 0.7s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    animation-delay: 0.3s;
+}
+@keyframes coach {
+    from
+    {
+        margin-left: -100%;
+    }
+    to
+    {
+        margin-left: 0%;
+    }
+    
+}
+.coachimgBx #teamimg{
+    width: 35%;
+}
+
+.coachimgBx #teamimg,#logo
+{
+    margin: 30px;
+}
+.coachtext
+{
+    position: relative;
+    height: 80%;
+    width: 30%;
+    top: 10%;
+    line-height: 18px;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 95%;
+    /* background-color:blueviolet; */
+}
+.lists{
+    border: black 1px solid;
+    background-color: #057c7c;
+    width: 100px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    /* background-color: #111; */
+}
+
+.container .card
+{
+    position:relative;
+    max-width: 240px;
+    height: 205px;
+    color: white;
+    text-align: center;
+    background: #057c7c;
+    margin: 30px 10px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover
+{
+    height: 350px;
+}
+
+.container .card .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 210px;
+    top: -60px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgBx img
+{
+    height: 210px;
+    width: 200px;
+    border-radius: 4px;
+}
+
+.container .card .content
+{
+    position: relative;
+    top: 33px;
+    padding: 10px 15px;
+    text-align:left;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    line-height: 6px;
+    /* background-color: aquamarine; */
+}
+
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -70px;
+    transition-delay: 0.3s;
+}
+

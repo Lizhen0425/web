@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBA大專籃球聯賽</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="rank.css">
+</head>
+<body>
+    <div class="top"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="./home.html"><img class="navbar-brand" src="./homepicture/logo-1.png"></a>
+        <!-- RWD button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 導覽列上的超連結 links on nav -->
+        <div class="collapse navbar-collapse" id="navDropdown2">
+            <ul class="navbar-nav">
+                <!--賽程-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link " data-bs-toggle="dropdown" href="./game schedule.html">賽程</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./game schedule.html">賽程表</a></li>
+                        <li><a class="dropdown-item" href="#">賽事回顧</a></li>
+                    </ul>
+                </li>
+                <!--戰績-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./standings.html">戰績</a>
+                </li>
+                <!--最新消息-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link " data-bs-toggle="dropdown" href="./news.html">最新消息</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./news.html">新聞/公告</a></li>
+                        <li><a class="dropdown-item" href="#">近期賽事影片</a></li>
+                    </ul>
+                </li>
+                <!--數據-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link " data-bs-toggle="dropdown" href="./rank.html">數據</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./rank.html#a1">個人數據排行</a></li>
+                        <li><a class="dropdown-item" href="#a2">團隊數據排行</a></li>
+                    </ul>
+                </li>
+                <!--球隊資訊-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./teaminform.html">球隊資訊</a>
+                </li>
+                <!--留言板-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">留言板</a>
+                </li>
+                <!--成員介紹-->
+                <li class="nav-item">
+                    <a class="nav-link" href="member.html">組員介紹</a>
+                </li>
+            </ul>
+        </div>
+        <a href="https://www.instagram.com/uba.tw/"><img class="navbar-link" src="./homepicture/instagram.png"></a>
+        <a href="https://www.facebook.com/CTUSFSSU"><img class="navbar-link" src="./homepicture/facebook.png"></a>
+        <a href="https://www.youtube.com/@ssutv"><img class="navbar-link-last" src="./homepicture/youtube.png"></a>
+    </nav>
+    <div class="main">
+        <div class="title">
+            <span></span>
+            <h1>比賽數據
+            STATISTIC</h1>
+        </div>
+        <div class="title2" id="a1">個人數據排行</div>
+        <div class="container"> <!--排行榜排版-->
+            <div class="group"> <!--得分排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">場均得分</div><!--標題-->
+                    <img src="./rankpicture/阿拉薩.png" alt="">
+                    <div class="top-name">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">阿拉薩</div>
+                        <div class="name">臺灣藝大</div>
+                        <div class="name">23.6</div>
+                    </div>
+                </div>
+                <div class="group-other"> 
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">林信寬</div>
+                    <div class="name">臺灣師大</div>
+                    <div class="name">22.2</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.3</h5></div>
+                    <div class="name">陳將双</div>
+                    <div class="name">世新大學</div>
+                    <div class="name">22</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">張俊生</div>
+                    <div class="name">世新大學</div>
+                    <div class="name">19.9</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">莫巴耶</div>
+                    <div class="name">政治大學</div>
+                    <div class="name">18.9</div>
+                </div>
+            </div>
+            <div class="group"> <!--籃板排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">場均籃板</div><!--標題-->
+                    <img src="./rankpicture/阿拉薩.png" alt="">
+                    <div class="top-name">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">阿拉薩</div>
+                        <div class="name">臺灣藝大</div>
+                        <div class="name">17.8</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">丹尼爾</div>
+                    <div class="name">世新大學</div>
+                    <div class="name">12.9</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.3</h5></div>
+                    <div class="name">奧斯曼</div>
+                    <div class="name">德霖科大</div>
+                    <div class="name">12.3</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">阿美</div>
+                    <div class="name">文化大學</div>
+                    <div class="name">11.9</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">莫巴耶</div>
+                    <div class="name">政治大學</div>
+                    <div class="name">11.5</div>
+                </div>
+            </div>
+            <div class="group"> <!--助攻排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">場均助攻</div><!--標題-->
+                    <img src="./rankpicture/游艾.png" alt="">
+                    <div class="top-name">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">游艾喆</div>
+                        <div class="name">政治大學</div>
+                        <div class="name">7.5</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">王翊帆</div>
+                    <div class="name">輔仁大學</div>
+                    <div class="name">6.7</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.3</h5></div>
+                    <div class="name">劉承彥</div>
+                    <div class="name">義守大學</div>
+                    <div class="name">5</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">林彥廷</div>
+                    <div class="name">政治大學</div>
+                    <div class="name">4.9</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">高錦瑋</div>
+                    <div class="name">健行科大</div>
+                    <div class="name">4.9</div>
+                </div>
+            </div>
+            <div class="group"> <!--抄截排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">場均抄截</div><!--標題-->
+                    <img src="./rankpicture/游艾.png" alt="">
+                    <div class="top-name">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">游艾喆</div>
+                        <div class="name">政治大學</div>
+                        <div class="name">3.4</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">劉承彥</div>
+                    <div class="name">義守大學</div>
+                    <div class="name">3.4</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.3</h5></div>
+                    <div class="name">魏莨哲</div>
+                    <div class="name">高雄師大</div>
+                    <div class="name">2.9</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">王禹承</div>
+                    <div class="name">臺灣體大</div>
+                    <div class="name">2.7</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">李宗漢</div>
+                    <div class="name">世新大學</div>
+                    <div class="name">2.5</div>
+                </div>
+            </div>
+            <div class="group"> <!--阻攻排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">場均阻攻</div><!--標題-->
+                    <img src="./rankpicture/丹尼爾.png" alt="">
+                    <div class="top-name">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">丹尼爾</div>
+                        <div class="name">世新大學</div>
+                        <div class="name">2.7</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">莫巴耶</div>
+                    <div class="name">政治大學</div>
+                    <div class="name">2.3</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.3</h5></div>
+                    <div class="name">恩洋</div>
+                    <div class="name">健行科大</div>
+                    <div class="name">1.9</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">阿拉薩</div>
+                    <div class="name">臺灣藝大</div>
+                    <div class="name">1.8</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">史密斯</div>
+                    <div class="name">健行科大</div>
+                    <div class="name">1.7</div>
+                </div>
+            </div>
+        </div>
+        <div class="title2" id="a2">團隊數據排行</div>
+        <div class="container"> <!--排行榜排版-->
+            <div class="group2"> <!--進攻得分排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">進攻得分</div><!--標題-->
+                    <img src="./rankpicture/政治大學.png" alt=" ">
+                    <div class="top-name2">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">政治大學</div>
+                        <div class="name">95.1</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other"> 
+                    <div class="name"><h4>NO.2</h4></div>
+                    <div class="name">健行科大</div>
+                    <div class="name">90.5</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.3</h5></div>
+                    <div class="name">世新大學</div>
+                    <div class="name">83.5</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">義守大學</div>
+                    <div class="name">78.5</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">高雄師大</div>
+                    <div class="name">76.7</div>
+                </div>
+            </div>
+            <div class="group2"> <!--防守失分排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">防守失分</div><!--標題-->
+                    <img src="./rankpicture/政治大學.png" alt="">
+                    <div class="top-name2">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">政治大學</div>
+                        <div class="name">61.8</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">世新大學</div>
+                    <div class="name">65</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.3</h5></div>
+                    <div class="name">輔仁大學</div>
+                    <div class="name">67.6</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">健行科大</div>
+                    <div class="name">67.9</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">國立體大</div>
+                    <div class="name">69.8</div>
+                </div>
+            </div>
+            <div class="group2"> <!--二分球排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">二分球</div><!--標題-->
+                    <img src="./rankpicture/政治大學.png" alt="">
+                    <div class="top-name2">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">政治大學</div>
+                        <div class="name">56.7</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">臺灣藝大</div>
+                    <div class="name">51</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.3</h5></div>
+                    <div class="name">健行科大</div>
+                    <div class="name">49.4</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">輔仁大學</div>
+                    <div class="name">48.5</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">世新大學</div>
+                    <div class="name">47.2</div>
+                </div>
+            </div>
+            <div class="group2"> <!--三分球排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">三分球</div><!--標題-->
+                    <img src="./rankpicture/健行科大.png" alt="">
+                    <div class="top-name2">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">健行科大</div>
+                        <div class="name">34.2</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">世新大學</div>
+                    <div class="name">32.2</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">臺灣師大</div>
+                    <div class="name">32.2</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">臺灣體大</div>
+                    <div class="name">31.9</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">義守大學</div>
+                    <div class="name">31</div>
+                </div>
+            </div>
+            <div class="group2"> <!--罰球排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">罰球</div><!--標題-->
+                    <img src="./rankpicture/臺灣師大.png" alt="">
+                    <div class="top-name2">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">臺灣師大</div>
+                        <div class="name">74.7</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">萬能科大</div>
+                    <div class="name">72</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.3</h5></div>
+                    <div class="name">臺灣體大</div>
+                    <div class="name">68.2</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">輔仁大學</div>
+                    <div class="name">66.8</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">健行科大</div>
+                    <div class="name">66.3</div>
+                </div>
+            </div>
+            <div class="group2"> <!--進攻籃板排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">進攻籃板</div><!--標題-->
+                    <img src="./rankpicture/世新大學.png" alt="">
+                    <div class="top-name2">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">世新大學</div>
+                        <div class="name">18</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">政治大學</div>
+                    <div class="name">15.3</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.3</h5></div>
+                    <div class="name">健行科大</div>
+                    <div class="name">15.2</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">臺灣體大</div>
+                    <div class="name">15.1</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">高雄師大</div>
+                    <div class="name">14.4</div>
+                </div>
+            </div>
+            <div class="group2"> <!--防守籃板排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">防守籃板</div><!--標題-->
+                    <img src="./rankpicture/政治大學.png" alt="">
+                    <div class="top-name2">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">政治大學</div>
+                        <div class="name">33.4</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">世新大學</div>
+                    <div class="name">30.7</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">健行科大</div>
+                    <div class="name">30.7</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">台灣藝大</div>
+                    <div class="name">30.4</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">萬能科大</div>
+                    <div class="name">29.1</div>
+                </div>
+            </div>
+            <div class="group2"> <!--總籃板排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">總籃板</div><!--標題-->
+                    <img src="./rankpicture/政治大學.png" alt="">
+                    <div class="top-name2">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">政治大學</div>
+                        <div class="name">48.7</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">世新大學</div>
+                    <div class="name">48.6</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.3</h5></div>
+                    <div class="name">健行科大</div>
+                    <div class="name">45.9</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">臺灣體大</div>
+                    <div class="name">41.5</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">萬能科大</div>
+                    <div class="name">41.5</div>
+                </div>
+            </div>
+            <div class="group2"> <!--助攻排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">助攻</div><!--標題-->
+                    <img src="./rankpicture/政治大學.png" alt="">
+                    <div class="top-name2">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">政治大學</div>
+                        <div class="name">24</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">健行科大</div>
+                    <div class="name">18.6</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.3</h5></div>
+                    <div class="name">輔仁大學</div>
+                    <div class="name">17.5</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">義守大學</div>
+                    <div class="name">17.1</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">臺灣藝大</div>
+                    <div class="name">16.4</div>
+                </div>
+            </div>
+            <div class="group2"> <!--阻攻排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">阻攻</div><!--標題-->
+                    <img src="./rankpicture/世新大學.png" alt="">
+                    <div class="top-name2">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">世新大學</div>
+                        <div class="name">5.2</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">健行科大</div>
+                    <div class="name">5.1</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.3</h5></div>
+                    <div class="name">政治大學</div>
+                    <div class="name">4.1</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">國立體大</div>
+                    <div class="name">3.3</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">臺灣藝大</div>
+                    <div class="name">3.1</div>
+                </div>
+            </div>
+            <div class="group2"> <!--失誤排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">失誤</div><!--標題-->
+                    <img src="./rankpicture/政治大學.png" alt="">
+                    <div class="top-name2">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">政治大學</div>
+                        <div class="name">12.4</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">健行科大</div>
+                    <div class="name">14</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.3</h5></div>
+                    <div class="name">臺灣師大</div>
+                    <div class="name">14.8</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">國立體大</div>
+                    <div class="name">15.3</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">輔仁大學</div>
+                    <div class="name">17</div>
+                </div>
+            </div>
+            <div class="group2"> <!--犯規球排行榜-->
+                <div class="group-top1"> <!--第一名欄位-->
+                    <div class="top-title">犯規</div><!--標題-->
+                    <img src="./rankpicture/僑光科大.png" alt="">
+                    <div class="top-name2">
+                        <div class="name"><h3>NO.1</h3></div>
+                        <div class="name">僑光科大</div>
+                        <div class="name">14</div>
+                    </div><!--名字-->
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.2</h5></div>
+                    <div class="name">政治大學</div>
+                    <div class="name">14.1</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.3</h5></div>
+                    <div class="name">健行科大</div>
+                    <div class="name">14.6</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.4</h5></div>
+                    <div class="name">國立體大</div>
+                    <div class="name">16</div>
+                </div>
+                <div class="group-other">
+                    <div class="name"><h5>NO.5</h5></div>
+                    <div class="name">義守大學</div>
+                    <div class="name">16.1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>  
+</body>
+</html>

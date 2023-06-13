@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBA大專籃球聯賽</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <div class="top"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="./home.html"><img class="navbar-brand" src="./homepicture/logo-1.png"></a>
+        <!-- RWD button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 導覽列上的超連結 links on nav -->
+        <div class="collapse navbar-collapse" id="navDropdown2">
+            <ul class="navbar-nav">
+                <!--賽程-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="./game schedule.html">賽程表</a>
+                </li>
+                <!--戰績-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./standings.html">戰績</a>
+                </li>
+                <!--最新消息-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link " data-bs-toggle="dropdown" href="./news.html">最新消息</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./news.html">新聞/公告</a></li>
+                        <li><a class="dropdown-item" href="./video.html">近期賽事影片</a></li>
+                    </ul>
+                </li>
+                <!--數據-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link " data-bs-toggle="dropdown" href="./rank.html">數據</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./rank.html">個人數據排行</a></li>
+                        <li><a class="dropdown-item" href="#">團隊數據排行</a></li>
+                    </ul>
+                </li>
+                <!--球隊資訊-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./teaminform.html">球隊資訊</a>
+                </li>
+                <!--留言板-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./message.html">留言板</a>
+                </li>
+                <!--成員介紹-->
+                <li class="nav-item">
+                    <a class="nav-link" href="member.html">組員介紹</a>
+                </li>
+            </ul>
+        </div>
+        <a href="https://www.instagram.com/uba.tw/"><img class="navbar-link" src="./homepicture/instagram.png"></a>
+        <a href="https://www.facebook.com/CTUSFSSU"><img class="navbar-link" src="./homepicture/facebook.png"></a>
+        <a href="https://www.youtube.com/@ssutv"><img class="navbar-link-last" src="./homepicture/youtube.png"></a>
+    </nav>
+   
+    <div class="main">
+        <div class="title">
+            <span></span>
+            <h1 class="page_title">
+            近期賽事影片
+            LATEST HIGHLIGHT
+            </h1>
+        </div>
+    
+        <div class="carousel">
+                <div class="carousel-container">
+                  <div class="slide">
+                    <div class="video-title">單場精華 ▌健行科大vs政治大學 ▌男一級冠軍戰</div>
+                    <a href="https://www.youtube.com/watch?v=ixxh-L9ArUA">
+                        <video width="560" height="315" src="./homevideo/健行科大vs政治大學.mp4" alt="健行政大" controls></video>
+                      </a>
+       
+                  </div>
+                  <div class="slide">
+                    <div class="video-title">單場精華 ▌臺灣師大vs世新大學 ▌男一級季軍戰</div>
+                    <a href="https://www.youtube.com/watch?v=NXJ2S7HyYjg">
+                        <video width="560" height="315" src="./homevideo/臺灣師大vs世新大學.mp4" alt="台師大世新" controls></video>
+                    </a>
+                  </div>
+                  <div class="slide">
+                   
+                    <div class="video-title">單場精華 ▌世新大學vs政治大學 ▌男一級四強戰</div>
+                    <a href="https://www.youtube.com/watch?v=UFJbX6I4TOY">
+                        <video width="560" height="315" src="./homevideo/世新大學vs政治大學.mp4" alt="世新政大" controls></video>    
+                    </a>
+                  </div>
+                  <div class="slide">
+                    <div class="video-title">單場精華 ▌臺灣師大vs健行科大 ▌男一級四強戰</div>
+                    <a href="https://www.youtube.com/watch?v=R78C_zFvOFw">
+                        <video width="560" height="315" src="./homevideo/臺灣師大vs健行科大.mp4" alt="台師大健行" controls></video>        
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-prev" href="#">&#8249;</a>
+                <a class="carousel-next" href="#">&#8250;</a>
+              </div>
+              
+              <script>
+              const carouselContainer = document.querySelector('.carousel-container');
+              const prevButton = document.querySelector('.carousel-prev');
+              const nextButton = document.querySelector('.carousel-next');
+              
+              let currentSlide = 0;
+              const totalSlides = carouselContainer.children.length;
+              
+              function showSlide(index) {
+                carouselContainer.style.transform = `translateX(-${index * 100}%)`;
+              }
+              
+              function goToPrevSlide() {
+                currentSlide--;
+                if (currentSlide < 0) {
+                  currentSlide = totalSlides - 1;
+                }
+                showSlide(currentSlide);
+              }
+              
+              function goToNextSlide() {
+                currentSlide++;
+                if (currentSlide >= totalSlides) {
+                  currentSlide = 0;
+                }
+                showSlide(currentSlide);
+              }
+              
+              prevButton.addEventListener('click', goToPrevSlide);
+              nextButton.addEventListener('click', goToNextSlide);
+              </script>
+        
+             </div>
+    </div>
+        </body>
+        <div class="footer"></div>

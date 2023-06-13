@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBA大專籃球聯賽</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="message.css">
+</head>
+<body>
+    <div class="top"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="./home.html"><img class="navbar-brand" src="./homepicture/logo-1.png"></a>
+        <!-- RWD button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 導覽列上的超連結 links on nav -->
+        <div class="collapse navbar-collapse" id="navDropdown2">
+            <ul class="navbar-nav">
+                <!--賽程-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="./game schedule.html">賽程表</a>
+                </li>
+                <!--戰績-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./standings.html">戰績</a>
+                </li>
+                <!--最新消息-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link " data-bs-toggle="dropdown" href="./news.html">最新消息</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./news.html">新聞/公告</a></li>
+                        <li><a class="dropdown-item" href="./video.html">近期賽事影片</a></li>
+                    </ul>
+                </li>
+                <!--數據-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link " data-bs-toggle="dropdown" href="./rank.html">數據</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./rank.html">個人數據排行</a></li>
+                        <li><a class="dropdown-item" href="#">團隊數據排行</a></li>
+                    </ul>
+                </li>
+                <!--球隊資訊-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./teaminform.html">球隊資訊</a>
+                </li>
+                <!--留言板-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./message.html">留言板</a>
+                </li>
+                <!--成員介紹-->
+                <li class="nav-item">
+                    <a class="nav-link" href="member.html">組員介紹</a>
+                </li>
+            </ul>
+        </div>
+        <a href="https://www.instagram.com/uba.tw/"><img class="navbar-link" src="./homepicture/instagram.png"></a>
+        <a href="https://www.facebook.com/CTUSFSSU"><img class="navbar-link" src="./homepicture/facebook.png"></a>
+        <a href="https://www.youtube.com/@ssutv"><img class="navbar-link-last" src="./homepicture/youtube.png"></a>
+    </nav>  
+                        <div class="main">
+                            <div class="title">
+                                <span></span>
+                                <h1 class="page_title">
+                                留言板
+                                MESSAGES
+                                </h1>
+                            </div>
+                            <div class="message">
+                                <h2 class="message_title">我想對</h2>  
+                                <label for="player" > 
+                                <select id="school_list" name = "學校選單" onchange="updateSecondSelect()">
+                                    <option value="德霖科大">德霖科大</option>
+                                    <option value="輔仁大學">輔仁大學</option>
+                                    <option value="臺灣體大">臺灣體大</option>
+                                    <option value="臺灣藝大">臺灣藝大</option>
+                                    <option value="臺灣師大">臺灣師大</option>
+                                    <option value="僑光科大">僑光科大</option>
+                                    <option value="義守大學">義守大學</option>
+                                    <option value="萬能科大">萬能科大</option>
+                                    <option value="國立體大">國立體大</option>
+                                    <option value="健行科大">健行科大</option>
+                                    <option value="高雄師大">高雄師大</option>
+                                    <option value="政治大學">政治大學</option>
+                                    <option value="北市大學">北市大學</option>
+                                    <option value="世新大學">世新大學</option>
+                                    <option value="文化大學">文化大學</option>
+                                    <option value="中興大學">中興大學</option>
+                                </select>
+  
+   
+                                <select id="player_list"></select>
+                                <script>
+                                  var firstSelect = document.getElementById("school_list");
+                                                  // 获取第二个下拉列表
+                var secondSelect = document.getElementById("player_list");
+
+                                         // 定义第一个下拉列表选项和对应的第二个下拉列表选项
+                 var options = {
+                  "德霖科大": ["陳翰", "廖俊溢", "阿布", "石易", "許瀚承", "莫博瑋", "陳子明", "陳思丞", "何子宇", "陳奎翰", "楊舜傑", "陳飛羽", "奧斯曼", "連軒德", "曾劉家齊", "吳昌樺", "彭竣宥", "王柏捷"],
+                  "輔仁大學": ["潘建宏", "莊瑋杰", "張傑程", "江均", "劉光尚", "喬楚瑜", "蔡紘揚", "傅發翔", "莊博元", "米哈洛", "凱德爾", "陳慶達", "陳晉垣", "王翊帆", "葛允增", "彭冠綸", "李沛澄", "鄭懷謙"],
+                  "臺灣體大": ["魏子雲", "陳子祥", "林子雋", "葉星孝", "周思佑", "林祖賢", "黃詠傳", "徐茂哲", "張佑晨", "許至皓", "王信勝", "王禹承", "王達倫", "羅伯特", "郭家洋", "張志豪", "葉桐閣", "陳宏維"],
+                  "臺灣藝大": ["范智堯", "蘇培凱", "黃浚倢", "洪瑋哲", "黃濬彥", "阿拉薩", "羅冠淯", "黃任揅", "呂彥萱", "許東城", "余維豪", "高宏權", "喬納森", "陳宏恩", "林玟丞", "馮誠恩"],
+                  "臺灣師大": ["陳致翰", "曾信武", "許永忠", "蕭世豪", "劉奕勳", "吳子庭", "林培寬", "李康仁", "張立法", "蔣佳霖", "鄭博仁", "張竣", "許敬凱", "黃凱聖", "陳立軍", "李佳穎", "劉立行"],
+                  "僑光科大": ["陳矄豪", "鄭嘉緯", "劉彥廷", "劉佳沅", "曾尚偉", "鍾凱聖", "殷義証", "林明瑋", "楊淯凱", "黃御賢", "巫竣安", "謝易達", "周渤諺", "張銪志", "陳繹展", "張敟崵", "林緯樺"],
+                  "義守大學": ["余祥平", "陳緯", "劉承彥", "柯中凱", "戴偉", "李宥騏", "黃茂根", "許駿偉", "邵盛羲", "曾銘偉", "王正文", "陳廷霖", "劉以道", "史承平", "蒲國倫"],
+                  "萬能科大": ["楊淇詠", "李家俊", "胡頌恩", "高詠晟", "黃志揚", "蘇家暐", "黃勇量", "王銘哲", "高偉綸", "林煜翰", "鄭家鈞", "黃皓豪", "莊昀楷", "卓謙", "盧卡", "葉子偉", "黑澤龍人", "聶曼亞"],        
+                  "國立體大": ["李佑薰", "江啟安", "楊承", "陳澔翔", "陳力行", "陳冠中", "游家喆", "吳承翰", "胡晉豪", "陳力生", "謝承諳", "黃偉程", "王晟霖", "李世瑞", "徐宇煇", "羅世恩", "許廷崴", "陳定雩"],
+                  "健行科大": [ "陳禹劭", "恩洋", "鞠丞哲", "張東庭", "高錦瑋", "徐宏瑋", "黃信翔", "潘偉傑", "丁冠皓", "劉丞勳", "蔡宸綱", "史密斯", "史魯齊", "孫琦森"],          
+                  "高雄師大": ["魏莨哲", "王智弘", "江品諺", "葉浩東", "黃麒哲", "蔡曜鴻", "王語烽", "郭振復", "廖景泰", "戴建仰", "曾嘉昇", "蔣岱佑", "蔡鎮嶽", "朱育君"],     
+                  "政治大學": [ "宋昕澔", "林彥廷", "林勵", "莫巴耶", "游艾喆", "李允傑", "莊朝勝", "鍾理翔", "杜拉米", "涂亦含", "歐力士", "吳志鍇", "黃子軒", "高布瑞", "王凱裕"],
+                  "北市大學": ["李承恩", "吳士麒", "曾頎翔", "陳鴻進", "蔡承軒", "林經倫", "陳奕豪", "梁予綸", "趙亮", "梁文杰", "楊博欽", "王幼恩", "達努巴克", "許皓洋", "郝以風", "黃冠儒", "林奇翰", "林于淵"],
+                  "世新大學": ["蔡明聰", "江政恩", "李宗漢", "陳將双", "王鼎鈞", "張俊生", "陳少宇", "陳龍凱", "李盛新", "周子傑", "爾文", "丹尼爾", "庫克", "簡賀宇", "唐彥景", "吳沛嘉", "沙巴斯丁", "吳柏林"],
+                  "文化大學": ["楊保羅", "黃志恩", "陳龍", "張弘易", "黃冠維", "李宸鋐", "楊皓韋", "巫紹齊", "楊張祐誠", "熊哲言", "蕭晟傑", "九龍", "阿美", "陳睿豐", "許浩翔", "王督騏", "黃翌倫", "郭嘉安"],
+                  "中興大學": ["蔣至昇", "陳易圻", "滑佳宸", "卓昇鋒", "張主承", "謝羿遙", "王聖翔", "王瑋中", "黃琨翔", "曹爾方", "劉俊廷", "胡凱喆", "陳新翰", "張正東", "姚科為", "施信宏", "蔡耀陞"],   
+                };
+        function updateSecondSelect() {
+        var selectedValue = firstSelect.value;
+        secondSelect.innerHTML = "";
+     
+        if (selectedValue in options) {
+            var secondOptions = options[selectedValue];
+            for (var i = 0; i < secondOptions.length; i++) {
+            var option = document.createElement("option");
+            option.text = secondOptions[i];
+            secondSelect.add(option);
+            }
+        }
+        }                      
+
+        document.addEventListener("DOMContentLoaded", function() {
+                updateSecondSelect();
+                });
+
+                firstSelect.addEventListener("change", function() {
+                updateSecondSelect();
+                });
+                </script>
+                </label>  
+                <h2 class="message_title">說</h2>  
+            </div>
+            <div class="message_area">
+                <form class="message_form" action="#" method="get">
+                <input type="text" class="message_text">
+                <button class="reset" type="reset"><span>清除</span></buttom>
+                <button class="submit" type="submit"><span>送出</span></buttom>
+                </form>
+            </div>
+            
+        
+            
+        </div>
+    <div class="footer"></div>
+     </body>
